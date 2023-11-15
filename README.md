@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Porfolio</h1>
 
-<p align="center"><img src="" alt="project-image"></p>
+
 
 <p id="description">Descubre el mundo digital a través de los ojos y habilidades de Martha Stanley una talentosa licenciada en sistemas. Este sitio web es más que un simple portafolio; es una ventana a la creatividad la innovación y la experiencia técnica que Martha aporta al mundo de la informática.</p>
 
