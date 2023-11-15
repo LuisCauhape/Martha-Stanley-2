@@ -6,49 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV-Martha Stanley</title>
    
-    <link rel="stylesheet" href="2-Estilos/estilos.css">
+    <link rel="stylesheet" href="/2-Estilos/estilos.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Open+Sans:ital,wght@1,300&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-    
+    <script src="https://kit.fontawesome.com/f5c485d4d5.js" crossorigin="anonymous"></script>
     
    
 </head>
-<body>
-
-<section id="header">   
-    <header >
-        <nav class="barra-de-navegacion">
-        <div class="marca"> 
-        <a href="">Martha Stanley</a>
-        </div>
-              <ul class="menu">
-              <a href="#experiencia">Experiencia</a>
-              <a href="#formacion">Formación</a>
-              <a href="#clientes">Clientes</a>
-              <a href="#aptitudes">Aptitudes</a>
-              <a href="#practicas">Practicas</a>
-              <a href="#contactos">Contactos</a>
-              </ul>
-        </nav>
+<body class="">
+   
+<header>  
+    <nav class="barra-de-navegacion">
+    <button  class="menu-btn" id="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"/></svg>
+        <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/></svg>
+    </button>
     
-    </header>
-</section>   
+
+
+    <div class="marca"> 
+        <a href="">Martha Stanley</a>
+        </div> 
+
+    <nav class="menu" id="menu">  
+    <a href="#inicio">Inicio</a>
+    <a href="#acerca">Acerca</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#formacion">Formacion</a>
+    <a href="#aptitudes">Aptitudes</a>
+    <a href="#practicas">Practicas</a>
+    <a href="#contacto">Contacto</a>
+     <label for="toggle" id="label_uno"><i class="fa-solid fa-moon"></i></label>
+     <input type="checkbox" id="toggle">
+     
+    </nav>
 
 <section class="informacion" id="informacion">
     
-
-<article class="contenedor" id="contenedor">
+</header>
+<article class="contenedor" id="inicio">
 
     <section class="contenedor_informacion">
      
     <section class="imagen__cv imagen__responsive" id="imagen__cv">
-    <img src="4-Imagenes/foto_cv_lc_es_12.jpg" alt="Imagen de CV">
+    <img src="/4-Imagenes/foto_cv_lc_es_12.jpg" alt="Imagen de CV">
     </section>
         
-  <section class="datos__cv">
+  <section  id="datos"  class="datos__cv">
     <h1>Martha Stanley</h1>
     <p class="subtitulo"> Licenciada en Sistemas Informáticos</p>
 
@@ -87,7 +94,7 @@
 
 </article>
 
-<article class="descripcion">
+<article class="descripcion " id="acerca">
     <h2>¡Hola!Soy Martha Stanley</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima repudiandae maiores? Omnis rerum corrupti sed, ullam, sunt fuga ea necessitatibus asperiores eum repudiandae pariatur et, possimus praesentium exercitationem incidunt?.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima repudiandae maiores? Omnis rerum corrupti sed, ullam, sunt fuga ea necessitatibus asperiores eum repudiandae pariatur et, possimus praesentium exercitationem incidunt?.</p>
@@ -192,11 +199,11 @@
 
 <article id="clientes" class="clientes">
     <section>
-   <img src="4-Imagenes/Marcas-01.png" alt="Imagen_Marca_1">
-   <img src="4-Imagenes/Marcas-02.png" alt="Imagen_Marca_2">
-   <img src="4-Imagenes/Marcas-03.png" alt="Imagen_Marca_3">
-   <img src="4-Imagenes/Marcas-04.png" alt="Imagen_Marca_4">
-   <img src="4-Imagenes/Marcas-05.png" alt="Imagen_Marca_5">
+   <img src="/4-Imagenes/Marcas-01.png" alt="Imagen_Marca_1">
+   <img src="/4-Imagenes/Marcas-02.png" alt="Imagen_Marca_2">
+   <img src="/4-Imagenes/Marcas-03.png" alt="Imagen_Marca_3">
+   <img src="/4-Imagenes/Marcas-04.png" alt="Imagen_Marca_4">
+   <img src="/4-Imagenes/Marcas-05.png" alt="Imagen_Marca_5">
     </section>
 
 </article>
@@ -204,7 +211,7 @@
 
 
 
-<article class="aptitudes">
+<article class="aptitudes" id="aptitudes">
     <section>
         <h2  id="aptitudes" class="titulo__aptitudes">Aptitudes</h2>
     </section>
@@ -262,42 +269,52 @@
       <button id="readmorebtn" class="readmorebtn">Leer Mas</button>
 
     
-</article>
 
 
-<section  id="contactos" class="formulario">
-    
-    
-   <article class="formulario__columna_uno"> 
-    
-    <form action="">
-    
-    <label for="" name="name">Nombre</label>
-    <input type="text" name="name" placeholder="Ingresa tu nombre" required >
+<section  id="contacto" class="formulario">
     
 
-    <label for="" name="Apellido">Apellido</label>
-    <input type="text" name="Apellido" placeholder="Ingresa tu Apellido" required>
-
-    <label for="" name="E-mail">Email</label>
-    <input type="email" name="E-mail" placeholder="Ingresa tu email" required>
+    <div class="uno">
     
-    <textarea name="descripcion" id="" cols="40" rows="10" placeholder="Dejame tu comentario" ></textarea>
-     
-    <button> Enviar</button>
+    <form action="" method="POST" id="form">
+        <div class="form">
+            <h1>Registro</h1>
+            <div class="grupo">
+                <input type="text" name="" id="name" ><span class="barra"></span>
+                <label for="">Nombre</label>
+            </div>
+            <div class="grupo">
+                <input type="email" name="" id="email" ><span class="barra"></span>
+                <label for="">Email</label>
+            </div>
+            <div class="grupo">
+                <input type="apellido" name="" id="lastname" ><span class="barra"></span>
+                <label for="">Apellido</label>
+            </div>
+            <div>
+                <textarea name="" id="" cols="30" rows="10">Escribe tu mensaje aqui</textarea>
+            </div>
+            
+            <button class="send" type="submit">Enviar</button>
+            <p class="warnings" id="warnings"></p>
+        </div>
     </form>
-    </article>
-
-<articulo class="formulario__columna_dos"
-id="formulario__columna_dos">
-    <h6>Martha Stanley</h6>
-    <p>Telefono</p>
-    <p>(481) 863-3815</p>
-    <p>Dirección</p>
-    <p>6399 N Stelling Rd</p>
-</articulo>
+    
+    
 </div>
-</section>
+<div class="dos">
+    
+        <h6>Martha Stanley</h6>
+        <p>Telefono</p>
+        <p>(481) 863-3815</p>
+        <p>Dirección</p>
+        <p>6399 N Stelling Rd</p>
+    
+    </div>
+    </section>    
+   
+
+
 
 <footer>
     <p> Sitio creado por Martha Stanley 2023 </p>
@@ -306,4 +323,5 @@ id="formulario__columna_dos">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
+<script src="3-Java Script/script.js"> </script>
 </html>
