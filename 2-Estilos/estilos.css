@@ -1,3 +1,5 @@
+
+
 :root{
     --first-color: #3a07d5ed; 
     --second-color: #202020;
@@ -22,6 +24,15 @@ html{
     scroll-margin-top:7rem;
 }
 
+
+/*********************** CLASES PARA JS *****************/  
+.hideText {
+    display: none;
+  }
+  
+  .showText {
+    display: block;
+  }
 
 
 
@@ -70,6 +81,37 @@ a:hover{
  margin-right: 1.3rem;
 }
 
+.menu-btn{
+    display: none;
+   }
+
+/*********************** BOTON OSCURO***************************************/
+
+#toggle{
+    display: none;
+}
+
+#label_uno{
+   color:#48a8df;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.dark{
+    background-color: #202020;
+    color: white;
+    transition: all 1.5s ease;
+
+}
+.dark p{
+    color: white;
+}
+.dark #datos{
+    background-color: #202020;
+}
+.dark .descripcion p{
+    color: white;
+}
 
 /********************** informacion **************************************************/
 
@@ -97,6 +139,7 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(2,50%);
     grid-template-rows:80% 20%;
+    margin-top: 16rem;
    
 }
 
@@ -396,7 +439,7 @@ font-weight: bold;
 .areas__practicas{
     
     width: 100%;
-    height: 80vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -415,11 +458,10 @@ font-weight: bold;
     color: var(--first-color);
     
 }
-
 .areas__practicas p{
-    
-    color: #4d4d4d;
+    margin: 50px;
 }
+
 
 .readmorebtn{
     width: 300px;
@@ -439,61 +481,82 @@ font-weight: bold;
 
 
 /**********************Formularios********/
+
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #f00202;
+    padding-top: 20px;
+    
+}
 #contactos{
     scroll-margin-top: 6.25rem;
 }
 .formulario{
+    width: 100%;
     
-    height: 100vh;
     background-color: #cecece;
     color:var(--first-color);
-    width: 100%;
-    height: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: space-evenly;
     
 
 }
-
-
-
-.formulario__columna_uno{
-   padding: 2rem;
-   margin-right:40px;
-   
-   font-size: medium;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 1.5rem;
-   text-align: start;
-}  
-    
-
-
-.formulario__columna_uno input{
+.form h1{
+    font-size: 1.5rem;
+}
+.uno input{
+    width: 50%;
     width: 300px;
     height: 30px;
     display: block;
     border: 0;
     border-bottom: 4px solid var(--first-color);
     border-bottom: 10px solid var(--first-color);
-
-    
-    
-
+    font-size: medium;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 1.5rem;
+   text-align: start;
 }
 
-.formulario__columna_uno input:focus{
+
+.dos{
+    width: 300px;
+    height: 30px;
+   
+    border: 0;
+    border-bottom: 4px solid var(--first-color);
+    border-bottom: 10px solid var(--first-color);
+    text-align: start;
+  
+    
+   
+}
+.formulario .dos p{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--first-color);
+}
+
+
+
+
+
+
+.uno input:focus{
     outline: none;
     
 }
-.formulario__columna_uno textarea{
+.uno textarea{
     resize: none;
     margin-top: 2rem;
     outline: none;
+    width: 300px;
 }
-.formulario__columna_uno button{
+.uno .send{
     display: block;
     margin-top: 1.3rem;
     
@@ -507,45 +570,62 @@ font-weight: bold;
     border: none;
 }
 
-.formulario__columna_dos{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+
+.dos h6{
     
-}
-.formulario__columna_dos h6{
-    
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
-.formulario__columna_dos p{
-    font-size: 15px;
-}
+
 label{
     font-weight: normal;
     font-size: 1em;
     font-family: serif;
     margin: 200px 0 8px 0;
 }
+
+
+
+.send{
+    font-family: 'roboto';
+    background: #4568DC;
+    
+    background:linear-gradient(to right, #6a80b3, #4568DC);
+    
+    background: linear-gradient(to right, #48a8df, #4568DC);
+    
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
 /********************* footer*******/
 
 footer{
-    margin: 0;
-    padding: 0;
+   
     width: 100%;
-    height: 50px;
+    height: 120px;
     background-color: var(--first-color);
     font-size: 1.5rem;
     font-weight:300;
     color: white;
     text-align: center;
+    
 
 }
 
-
-
-
 /************************************** Resposividad  HASTA 1024PX**************************************************************/
+/************************************** Resposividad  HASTA 1024PX**************************************************************/
+/************************************** Resposividad  HASTA 1024PX**************************************************************/
+/************************************** Resposividad  HASTA 1024PX**************************************************************/
+/************************************** Resposividad  HASTA 1024PX**************************************************************/
+/************************************** Resposividad  HASTA 1024PX**************************************************************/
+/************************************** Resposividad  HASTA 1024PX**************************************************************//************************************** Resposividad  HASTA 1024PX**************************************************************/
+
 @media screen and (max-width:64rem ){
     html{
         
@@ -556,6 +636,74 @@ footer{
  body {
     display: block;
 }
+
+/******************************************************** MENU ********************************************/
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--first-color);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+    padding-top: 4rem;
+    color: white;
+  }
+  
+  
+.menu.is-active {
+    opacity: 1;
+    pointer-events: auto;
+    margin-top: 5rem;
+}
+
+
+
+
+.menu a{
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--first-color);
+    
+    
+
+}
+
+.menu a:hover{
+    color: white;
+    background-color:rgb(85, 53, 245);
+    width: 100%;
+    
+
+}
+
+#menu-btn{
+    display: initial;
+    background-color: rgb(236, 237, 240);
+    outline: thin solid var(--first-color);
+    border: 0;
+    cursor: pointer;
+    fill: var(--first-color);
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+
+.none{
+    display: none;
+}
+
+
+
+
 
  /****************************************************** HEADER *****************************************/
  .marca{
@@ -572,17 +720,7 @@ footer{
 }   
  
 
-.menu{
-    margin-top: 5rem;
-    display: flex;
-    flex-direction:row;
-    
 
-    
-    background-color: var(--first-color);
-    
-    
-}
 
 /********************************************************* informacion *******************************************/
 .contenedor{
@@ -699,11 +837,6 @@ footer{
 }
 
 /******************************************************* PRACTICAS  *****************************************/
-.areas__practicas{
-    
-   margin: 15rem 0 14rem 0;
-  padding: 2rem 0 2rem 0;
-}
 
 .formulario{
 
@@ -711,12 +844,20 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 7rem;
 }
-.formulario__columna_dos h6{
+.formulario .uno{
+    margin-top: 1.7rem;
+}
+.formulario .dos h6{
+    margin: 60px;
+}
+.formulario .dos p{
     margin: 10px;
 }
-.formulario__columna_dos p{
-    margin: 10px;
+
+footer{
+    margin-top: 400px;
 }
 
 }
@@ -744,6 +885,9 @@ footer{
     display: block;
 }
 
+
+  
+
  /****************************************************** HEADER *****************************************/
  .marca{
     width: 50%;
@@ -770,6 +914,10 @@ footer{
     
     
 }
+
+/*************************************************************** MENU *********************************************/
+
+
 
 /********************************************************* informacion *******************************************/
 
@@ -876,11 +1024,6 @@ footer{
 }
 
 /******************************************************* PRACTICAS  *****************************************/
-.areas__practicas{
-    
-   margin: 15rem 0 14rem 0;
-  padding: 2rem 0 2rem 0;
-}
 
 .formulario{
 
@@ -889,14 +1032,15 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.formulario__columna_dos h6{
+.dos h6{
     margin: 10px;
 }
-.formulario__columna_dos p{
+.formulario .dos p{
     margin: 10px;
 }
 
 }
+
 
 
 
